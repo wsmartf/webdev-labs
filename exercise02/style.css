@@ -11,14 +11,38 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+section {
+    width: 350px;
+    margin: 10px;
+    border: solid 1px #cecece;
+    padding-bottom: 10px
+}
+
+section img {
+    width: 100%;
+}
+
+section p, section h2, section button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

@@ -81,13 +81,6 @@ WHERE user_id = 26 AND post_id = 221;
 
 
 -- Exercise 13
-UPDATE table_name
-SET column1 = value1,
-    column2 = value2,
-    ...
-WHERE condition;
-
--- specific example:
 UPDATE users
 SET email = 'knick2022@gmail.com' 
 WHERE id = 26;
